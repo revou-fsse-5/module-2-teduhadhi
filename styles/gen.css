@@ -1,0 +1,31 @@
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+  
+body {
+    font-family: Roboto, Arial;
+    margin: auto;
+    padding-top: 120px;
+    max-width: 980px;
+}
+
+footer{
+    margin-top: 200px;
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.footer-button{
+    height: 30px;
+    background: none;
+    border: none;
+    color: rgb(114, 114, 114);
+    cursor:pointer;
+    font-size: 15px;
+   
+}
+
+
+

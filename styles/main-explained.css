@@ -1,0 +1,52 @@
+.text-sect{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 150px;
+    margin-right: 30px;
+    margin-left: 30px;
+    column-gap: 20px;
+    height: 315px;
+}
+
+.why-bored-explained{
+    padding-right: 30px;
+}
+
+.why-bored-image{
+    text-align: right;
+}
+
+.bored-image{
+    margin-top: 15px;
+    width: 66%;
+}
+.ssh-left-why-bored{
+    padding: 0;
+    padding-left: 15px;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.list-style{
+    list-style: none ;
+    padding: 0;
+    padding-left: 15px;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.list-style li{
+    margin-top: 5px;
+}
+
+.list-style li:before{
+    content: "- ";
+}
+
+
+.vsauce-boredom-video{
+    height: 315px;
+    width: 560px;
+}

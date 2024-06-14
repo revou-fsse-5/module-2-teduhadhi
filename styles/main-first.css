@@ -1,0 +1,58 @@
+.main-sect{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 30px;
+    margin-left: 30px;
+    column-gap: 20px;
+    row-gap: 20px;
+    align-items: center;
+
+}
+
+.pms-left{
+    border-radius: 20px;
+    padding: 15px;
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(251, 251, 251, 0.5) 100%), linear-gradient(90deg, #84d2ff, #8d5acd);
+    height: 400px;
+    
+}
+
+.bored-duck-title{
+    margin:0;
+    font-size: 70px;
+}
+
+.bored-duck-text{
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400; 
+}
+
+.get-bored-button{
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-style: none;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 26px;
+    padding-right: 26px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: box-shadow 0.15s;
+}
+
+.get-bored-button:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.pms-right{
+    text-align: center;
+}
+
+.main-image{
+    height: 350px;
+}
