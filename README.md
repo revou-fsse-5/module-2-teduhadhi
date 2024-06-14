@@ -2,6 +2,7 @@
 ## Steps
 ### General
 
+
 - Tags and Attributes 
     - Tags : define the function, usually placed at start.
     - Attributes : define the behaviour, also used for stylize the element.
@@ -105,9 +106,18 @@ body {
 - &lt;select>, &lt;option> : Set up dropdown select menu and the opstions.
 - &lt;textarea> : Setup a textbox for user input.
 - &lt;footer> : Semantic tag represents the footer of the HTML document.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
+### Navigation <br>
+---
+<br>
+<br>
 
-### Navigation
 <img src= "sources\readme\navigation.png" alt="nav">
 
 1. Add **nav** tag to create navigation semantic tag.
@@ -278,90 +288,19 @@ body {
     padding: 0;
 } 
 ```
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ### First Section : Title
+---
+<br>
+<br>
 <img src= "sources\readme\section-1.png" alt="section-1">
 
-1. Set up the big container, then divde them into two side by side smaller container.
-```html
-<section class="main-sect">
-    <div class="pms-left">
-        ...
-    </div>
-    <div class="pms-right">
-        ...
-    </div>
-</section>
-```
-
-2. Stylize both containers.
-```css
-.pms-left{
-    border-radius: 20px;
-    padding: 15px;
-    background: linear-gradient(rgba(255, 255, 255, 1), rgba(251, 251, 251, 0.5) 100%), linear-gradient(90deg, #84d2ff, #8d5acd);
-    height: 400px;
-}
-
-.pms-right{
-    text-align: center;
-}
-```
-
-3. For the left container, set up the title, the paragraph and the linked button then stylize them.
-```html
-<h1 class="bored-duck-title">BORED DUCK</h1>
-<p class="bored-duck-text">In a serene pond, there lived a duck named Quackington, who was constantly plagued by boredom. Each day felt like a monotonous repetition of paddling lazily across the water and nibbling on aquatic greens. He longed for excitement to break the mundane routine, gazing wistfully at the sky for adventure to descend upon his feathered world.</p>
-<a href="https://www.google.com/search?q=pizza&sca_esv=eae7a402c78866a8&sca_upv=1&udm=2&sxsrf=ADLYWIIDq30tfIXDuhL-qONOaqe2Tly-Nw%3A1718271965922&ei=3b9qZpzvN5ad4-EPtNexoAs&ved=0ahUKEwjc0Z_xpdiGAxWWzjgGHbRrDLQQ4dUDCBA&uact=5&oq=pizza&gs_lp=Egxnd3Mtd2l6LXNlcnAiBXBpenphMg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFMggQABiABBixAzIFEAAYgAQyCBAAGIAEGLEDMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIsR1QhwpY8RtwBngAkAEAmAFboAHSBaoBATm4AQPIAQD4AQGYAg-gArsGwgIEECMYJ8ICBBAAGAPCAg4QABiABBixAxiDARiKBZgDAIgGAZIHBDEzLjKgB_wv&sclient=gws-wiz-serp" target="_blank">
-<button class="get-bored-button">GET BORED</button>
-</a>
-```
- ```css
- .bored-duck-title{
-    margin:0;
-    font-size: 70px;
-}
-.bored-duck-text{
-    margin: 0;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400; 
-}
-```
-
-<img src="sources\readme\hover-1.png" alt="hover-1">  <img src="sources\readme\hover-2.png" alt="hover-2">
-
-```css
-.get-bored-button{
-    margin-top: 20px;
-    background-color: rgba(0, 0, 0, 0.15);
-    border-style: none;
-    color: rgb(255, 255, 255);
-    border-radius: 30px;
-    cursor: pointer;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 26px;
-    padding-right: 26px;
-    font-weight: 600;
-    font-size: 15px;
-    transition: box-shadow 0.15s;
-}
-
-.get-bored-button:hover{
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
-}
-```
-4. For the right container, set up the image.
-```html
-<img class="main-image" src="sources\images\main-image.svg">
-```
-```css
-.main-image{
-    height: 350px;
-}
-```
-### Second Section : Explained
 1. Add **section** tag to create semantic tag
 2. Make two horizontally distributed grid contained the desired elements.
     - Set the **display** attribute to grid
@@ -469,10 +408,18 @@ body {
 .main-image{
     height: 350px;
 ```
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
+### Second Section : Explained
+---
+<br>
+<br>
 
-
-### Second Section
 The interface
 <img src= "sources\readme\section-2.png" alt="section-2">
 
@@ -583,7 +530,17 @@ The nested layout
     width: 560px;
 }
 ```
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 ### Third Section : Data
+---
+<br>
+<br>
 <img src= "sources\readme\section-3.png" alt="section-3">
 
 1. Add **section** tag to create semantic tag.
@@ -774,11 +731,17 @@ Radiobutton
 ```html
 <input class="submit-button" type="submit" value="Submit">
 ```
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ### Footer
+---
+<br>
+<br>
 <img src= "sources\readme\footer.png" alt="footer">
 
 they are just texts nothing much really, aside from margin, padding, font-size, etc. just basics styling.
