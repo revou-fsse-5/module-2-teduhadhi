@@ -5,27 +5,22 @@
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(228, 228, 228);
+    border-bottom: 1px solid rgb(228, 228, 228);
 
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    inset: 0 0 0;
     z-index: 2;
 }
 
 .left-nav-sect{
     width: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px;
 }
 
 .mid-nav-sect{
     flex: 1;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 10px;
+    margin: 0 20px;
     display: flex;
     justify-content: end;
 }
@@ -51,31 +46,19 @@
     flex-shrink: 0;
 }
 
-
-
-.cart-icon,
-.envelope-icon,
-.globe-icon,
-.heart-icon,
-.profile-icon {
+img {
     height: 24px;
     cursor: pointer;
     }
 
-.cart-icon-container,
-.heart-icon-container,
-.envelope-icon-container,
-.profile-icon-container {
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-.cart-icon-container .popup,
-.heart-icon-container .popup,
-.envelope-icon-container .popup,
-.profile-icon-container .popup{
+.container .popup{
     position: absolute;
     background-color: gray;
     color: white;
@@ -92,11 +75,7 @@
     white-space: nowrap;
 }
 
-.globe-icon-container:hover .popup,
-.cart-icon-container:hover .popup,
-.heart-icon-container:hover .popup,
-.envelope-icon-container:hover .popup,
-.profile-icon-container:hover .popup{
+.container:hover .popup{
     opacity: 1;
 }
 
