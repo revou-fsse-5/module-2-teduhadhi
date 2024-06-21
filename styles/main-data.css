@@ -109,11 +109,12 @@ textarea:focus {
 
 label{
     font-size: 1em;
+    margin-left: 10px;
 }
 
 .radio-check{
     height: 20px;
-    width: 40px;
+    width: 20px;
 }
 
 .submit-button{
