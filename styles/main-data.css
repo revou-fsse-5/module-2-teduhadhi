@@ -2,12 +2,11 @@
     margin: 200px 30px 0px ;
     max-width: 980px;
     padding: 0 5%;
+    font-size: 15px;
 }
-
 .data-submit-title{
-    font-size: 22px;
+    font-size: 1.45em;
 }
-
 .data-sub-cont{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -19,9 +18,8 @@
     "dtchk dtchk dtchk dtchk dtchk dtchk"
     "dtrdo dtrdo dtrdo dtrdo dtrdo dtrdo"
     "dttxt dttxt dttxt dttxt dttxt dttxt"
-    "dtsgn dtsgn dtsgn dtsgn dtsgn dtsmt ";
+    "dtsmt dtsmt dtsmt dtsmt dtsmt dtsmt";
 }
-
 .data-name{
     grid-area: dtnme;
 }
@@ -49,37 +47,26 @@
 .data-textarea{
     grid-area: dttxt;
 }
-.data-signup{
-    grid-area: dtsgn;
-}
 .data-submit{
     grid-area: dtsmt;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
 }
-
-
-
 
 .select-check-radio{
     display: flex;
     column-gap: 15px;
 }
 
-
-
-.data-name,
-.data-email,
-.data-address,
-.data-city,
-.data-province,
-.data-postal-code,
-.data-textarea {
+input,
+select,
+textarea {
     height: 35px;
     border-radius: 10px;
-    border-color: lightgray;
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid lightgray;
+    font-size: 1em;
     padding-left: 10px;
-    font-size: 15px;
     transition: background-color 0.15s;
     transition: box-shadow 0.15s;
 }
@@ -91,18 +78,12 @@
     height:200px;
     resize: none;
     font-family: Roboto,Arial;
-    padding: 6px 9px;
-    
+    padding: 6px 9px; 
 }
 
-.data-name:focus,
-.data-name:focus,
-.data-email:focus,
-.data-address:focus,
-.data-city:focus,
-.data-province:focus,
-.data-postal-code:focus,
-.data-textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
     background-color: rgb(241, 241, 241, 0.15);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
 }
@@ -111,14 +92,11 @@
 .tip-pizza{
     padding: 0px 0px 15px 20px ;
     color: rgb(143, 142, 142);
-    font-size: 17px;
+    font-size: 1.13em;
     font-weight: 500;
 }
 
-.left-option,
-.middle-option,
-.right-option{
-    font-size: 15px;
+.cr-options{
     display: flex;
     align-items: center;
     width: 200px;   
@@ -126,8 +104,11 @@
 .data-signup{
     font-size: 15px;
     display: flex;
-    flex: 1;
     align-items: center;
+}
+
+label{
+    font-size: 1em;
 }
 
 .radio-check{
@@ -135,28 +116,34 @@
     width: 40px;
 }
 
-.data-submit{
+.submit-button{
     height: 35px;
     width: 95px;
+    padding: 1px 8px;
     font-size: 15px;
     font-weight: 600;
     color: rgb(126, 159, 170);
     background-color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    border-color:lightblue;
+    border: 1px solid lightblue;
     cursor:pointer;
     transition: background-color 0.15s;
 }
 
-.data-submit:hover{
+.submit-button:hover{
     color: white;
     background-color: rgb(159, 202, 216);
 }
 
+@media (max-width:840px){
+    .data-sect{
+        margin-top: 70px;
+    }
+}
 
 @media (max-width:600px) {
+    .data-sect{
+        font-size: 0.9em;
+    }
     .data-sub-cont{
         display: grid;
         grid-template-columns: 1fr;
@@ -171,12 +158,22 @@
         "dtchk"
         "dtrdo"
         "dttxt"
-        "dtsgn"
         "dtsmt";
     }
     .select-check-radio{
         display: flex;
         row-gap: 15px;
         flex-direction: column;
+    }
+
+    .radio-check{
+        height: 17px;
+        width: 34px;
+    }
+}
+
+@media (max-width:450px) {
+    .data-sect{
+        font-size: 0.85em;
     }
 }

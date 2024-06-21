@@ -77,7 +77,7 @@
     .text-sect{
         display: grid;
         grid-template-columns: 1fr;
-        margin: 30px;
+        margin: 70px 30px 0px;
         gap: 70px;
         grid-template-areas:
         "mnextxt" 
@@ -90,7 +90,6 @@
 }
 
 @media (max-width:650px){
-
     .vsauce-boredom-video{
         height: 270px;
         width: 480px;
