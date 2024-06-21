@@ -25,7 +25,8 @@
     <nav class="top-nav">
         <div class="left-nav-sect">
             <div class="container">
-                <img class="menu-icon" src="sources\icons\menu-icon.svg">
+                <button popovertarget="side-menu" class="menu-button"><img class="profile-icon" src="sources\icons\menu-icon.svg">
+                </button>
                 <div class="popup">More</div>
             </div>
         </div>
@@ -37,7 +38,6 @@
             </div>
         </div>
         
-
         <div class="right-nav-sect">         
             <div class="container">
                 <img class="cart-icon" src="sources\icons\cart-icon.svg">
@@ -58,6 +58,19 @@
             </div>
         </div>
     </nav>
+    
+    <nav class="side-menu" popover role="side-menu" id="side-menu">
+        <div class="side-menu-cont">
+        <button popovertarget="side-menu" popoevertargetaction="hide" class="menu-button"><img class="left-icon" src="sources\icons\left-icon.svg">
+        </button>
+        <ul class="side-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+    
+    <div class="overlay-all"></div>
 
     <section class="main-sect">
         <div class="pms-left">

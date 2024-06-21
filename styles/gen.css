@@ -26,14 +26,14 @@ footer{
 
 @media(max-width:780px){
     body{
-        padding-top: 100px;
+        padding-top:80px;
 
     }
 }
 
 @media(max-width:450px){
     body{
-        padding-top: 70px;
+        padding-top: 50px;
 
     }
 }
