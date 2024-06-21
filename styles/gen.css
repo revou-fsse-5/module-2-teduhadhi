@@ -1,6 +1,5 @@
 p {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0px;
 }
   
 body {
@@ -13,8 +12,7 @@ body {
 footer{
     margin-top: 200px;
     text-align: center;
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding: 17px 0px;
 }
 
 .footer-button{
@@ -23,9 +21,19 @@ footer{
     border: none;
     color: rgb(114, 114, 114);
     cursor:pointer;
-    font-size: 15px;
-   
+    font-size: 15px; 
 }
 
+@media(max-width:780px){
+    body{
+        padding-top: 100px;
 
+    }
+}
 
+@media(max-width:450px){
+    body{
+        padding-top: 70px;
+
+    }
+}

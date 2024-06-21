@@ -1,14 +1,15 @@
 .text-sect{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 150px;
-    margin-right: 30px;
-    margin-left: 30px;
-    column-gap: 20px;
-    height: 315px;
+    margin: 150px 30px 30px 30px;
+    gap: 20px;
+    align-items: center;
+    grid-template-areas:
+    "mnextxt mnexytb";
 }
 
 .why-bored-explained{
+    grid-area: mnextxt;
     padding-right: 30px;
 }
 
@@ -45,8 +46,69 @@
     content: "- ";
 }
 
+.vsauce-boredom{
+    grid-area: mnexytb;
+    text-align: center;
+}
 
 .vsauce-boredom-video{
     height: 315px;
     width: 560px;
+}
+
+@media (max-width:950px){
+    .vsauce-boredom-video{
+        height: 270px;
+        width: 480px;
+    }
+    .ssh-left-why-bored{
+        font-size: 25px;
+    }
+    .list-style{
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+
+
+
+@media (max-width:840px){
+    .text-sect{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 30px;
+        gap: 70px;
+        grid-template-areas:
+        "mnextxt" 
+        "mnexytb";
+    }
+    .vsauce-boredom-video{
+        height: 315px;
+        width: 560px;
+    }
+}
+
+@media (max-width:650px){
+
+    .vsauce-boredom-video{
+        height: 270px;
+        width: 480px;
+    }
+}
+
+@media (max-width:550px){
+
+    .vsauce-boredom-video{
+        height: 225px;
+        width: 400px;
+    }
+}
+
+@media (max-width:450px){
+
+    .vsauce-boredom-video{
+        height: 180px;
+        width: 320px;
+    }
 }
