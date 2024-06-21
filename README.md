@@ -1,11 +1,13 @@
 # 🦆 BORED DUCK
+
+[Link](https://revou-fsse-5.github.io/module-1-teduhadhi/)
 # V.01
 ## General
 
 Turns out being bored is not necessarily a bad thing??
 <br>
 
-This is a simple page about a certain bored duck looking a company while explaining some good thing about being bored.
+This is a simple page about a certain bored duck looking for a company while explaining some good things about being bored.
 
 ### Main Layout
 Here is the general concept about the layout
@@ -14,7 +16,7 @@ Here is the general concept about the layout
 
 ### Head
 
-&lt;meta> set the meta tags for hte metadatas.
+&lt;meta> set the meta tags for the metadatas.
 
 ```html
     <meta name="keywords" content="Boredom, Mindfulness, Duck">
