@@ -293,7 +293,7 @@ Then using **translate** attribute to create a side-in animation.
     transition: translate 0.5s, display 0.5s ease-out allow-discrete;
     z-index: 3;
 }
-
+ 
 .side-menu:popover-open{
     translate: 0 0;
 
