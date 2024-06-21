@@ -1,54 +1,70 @@
 .data-sect{
-    border-width: 1px;
-    border-color: rgb(255, 202, 210);
-    border-radius: 20px;
-    margin-top: 200px;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin: 200px 30px 0px ;
     max-width: 980px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0 5%;
 }
 
 .data-submit-title{
     font-size: 22px;
 }
 
-.data-sub-cont .first-row {
-    display: flex;
-    column-gap: 20px;
-    row-gap: 20px;
-    margin-top: 20px;
-}
-.data-sub-cont .second-row {
-    display: flex;
-    margin-top: 20px;
-}
-.data-sub-cont .third-row,
-.data-sub-cont .fourth-row,
-.data-sub-cont .fifth-row {
-    display: flex;
-    column-gap: 20px;
-    row-gap: 20px;
-    align-items: center;
-    margin-top: 13px;
-}
-.data-sub-cont .third-row{
-    margin-top: 20px;
+.data-sub-cont{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px 15px;
+    grid-template-areas:
+    "dtnme dtnme dtnme dteml dteml dteml"
+    "dtaddr dtaddr dtaddr dtaddr dtaddr dtaddr"
+    "dtcty dtcty dtpvn dtpvn dtpst dtpst"
+    "dtchk dtchk dtchk dtchk dtchk dtchk"
+    "dtrdo dtrdo dtrdo dtrdo dtrdo dtrdo"
+    "dttxt dttxt dttxt dttxt dttxt dttxt"
+    "dtsgn dtsgn dtsgn dtsgn dtsgn dtsmt ";
 }
 
-.data-sub-cont .fourth-row,
-.data-sub-cont .fifth-row{
-    justify-content: left;
+.data-name{
+    grid-area: dtnme;
 }
-.data-sub-cont .sixth-row {
-    margin-top: 20px;
+.data-email{
+    grid-area: dteml;
 }
-.data-sub-cont .seventh-row {
+.data-address{
+    grid-area: dtaddr;
+}
+.data-city{
+    grid-area: dtcty;
+}
+.data-province{
+    grid-area: dtpvn;
+}
+.data-postal-code{
+    grid-area: dtpst;
+}
+.data-check{
+    grid-area: dtchk;
+}
+.data-radio{
+    grid-area: dtrdo;
+}
+.data-textarea{
+    grid-area: dttxt;
+}
+.data-signup{
+    grid-area: dtsgn;
+}
+.data-submit{
+    grid-area: dtsmt;
+}
+
+
+
+
+.select-check-radio{
     display: flex;
-    align-items: center;
-    margin-top: 20px;
+    column-gap: 15px;
 }
+
+
 
 .data-name,
 .data-email,
@@ -57,7 +73,6 @@
 .data-province,
 .data-postal-code,
 .data-textarea {
-    flex: 1;
     height: 35px;
     border-radius: 10px;
     border-color: lightgray;
@@ -72,12 +87,12 @@
     height: 38px;
 }
 .data-textarea{
-    width:100%;
+    width:auto;
     height:200px;
     resize: none;
     font-family: Roboto,Arial;
-    padding-left: 9px;
-    padding-top: 6px;
+    padding: 6px 9px;
+    
 }
 
 .data-name:focus,
@@ -94,8 +109,7 @@
 
 .duck-race,
 .tip-pizza{
-    padding-left: 20px;
-    margin-top: 20px;
+    padding: 0px 0px 15px 20px ;
     color: rgb(143, 142, 142);
     font-size: 17px;
     font-weight: 500;
@@ -109,25 +123,19 @@
     align-items: center;
     width: 200px;   
 }
-.singup-option{
+.data-signup{
     font-size: 15px;
     display: flex;
     flex: 1;
     align-items: center;
 }
 
-.lcc,
-.mcc,
-.rcc,
-.lrr,
-.mrr,
-.rrr,
-.soo{
+.radio-check{
     height: 20px;
     width: 40px;
 }
 
-.submit-button{
+.data-submit{
     height: 35px;
     width: 95px;
     font-size: 15px;
@@ -142,9 +150,33 @@
     transition: background-color 0.15s;
 }
 
-.submit-button:hover{
+.data-submit:hover{
     color: white;
     background-color: rgb(159, 202, 216);
 }
 
 
+@media (max-width:600px) {
+    .data-sub-cont{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px 15px;
+        grid-template-areas:
+        "dtnme"
+        "dteml"
+        "dtaddr"
+        "dtcty"
+        "dtpvn"
+        "dtpst"
+        "dtchk"
+        "dtrdo"
+        "dttxt"
+        "dtsgn"
+        "dtsmt";
+    }
+    .select-check-radio{
+        display: flex;
+        row-gap: 15px;
+        flex-direction: column;
+    }
+}

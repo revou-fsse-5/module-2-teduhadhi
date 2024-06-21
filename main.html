@@ -95,70 +95,57 @@
         <form action="" method="get">
             <h3 class="data-submit-title">Drop your address and I will pay a visit to your nearby ponds</h3>
             <div class="data-sub-cont">
-                <div class="first-row">
-                        <input class="data-name" type="text" placeholder="Name" name="submit-name" required> 
-                        <input class="data-email" type="email" placeholder="duck@something.com" name="submit-email" required> 
-                </div>
-                    
-                <div class="second-row">
-                    <input class="data-address" type="text" placeholder="Address" required> 
-                </div>
-
-                <div class="third-row">
-                        <input class="data-city" type="text" placeholder="City" name="submit-city" required> 
-                        <select class="data-province" name="submit-province">
-                            <option value="EastJav">East Java</option>
-                            <option value="CentJaw">Central Java</option>
-                            <option value="WestJav">West Java</option>
-                        </select>
-                        <input class="data-postal-code" type="text" pattern="[0-9]{5}" placeholder="Postal Code" name="submit-postalcode" required>
-                </div>
-
+                <input class="data-name" type="text" placeholder="Name" name="submit-name" required> 
+                <input class="data-email" type="email" placeholder="duck@something.com" name="submit-email" required>
+                <input class="data-address" type="text" placeholder="Address" required>
+                <input class="data-city" type="text" placeholder="City" name="submit-city" required> 
+                <select class="data-province" name="submit-province">
+                    <option value="EastJav">East Java</option>
+                    <option value="CentJaw">Central Java</option>
+                    <option value="WestJav">West Java</option>
+                </select>
+                <input class="data-postal-code" type="text" pattern="[0-9]{5}" placeholder="Postal Code" name="submit-postalcode" required>
+            <div class="data-check">
                 <p class="duck-race">Highly suggest to select them all ;)</p>
-                <div class="fourth-row">
+                <div class="select-check-radio">
                     <div class="left-option">
-                        <input class="lcc" type="checkbox" id="mallard" name="submit-duck" value="mallard">
+                        <input class="radio-check" type="checkbox" id="mallard" name="submit-duck" value="mallard">
                         <label for="mallard"> Mallard Duck</label>
                     </div>
                     <div class="middle-option">
-                        <input class="mcc" type="checkbox" id="pekin" name="submit-duck" value="pekin">
+                        <input class="radio-check" type="checkbox" id="pekin" name="submit-duck" value="pekin">
                     <label for="pekin"> Pekin Duck</label>
                     </div>
                     <div class="right-option">
-                        <input class="rcc" type="checkbox" id="mandarin" name="submit-duck" value="mandarin">
+                        <input class="radio-check" type="checkbox" id="mandarin" name="submit-duck" value="mandarin">
                         <label for="mandarin"> Mandarin Duck</label>
                     </div>
                 </div>
+            </div>
 
+            <div class="data-radio">
                 <p class="tip-pizza">How many pizza slices are you willing to invest?</p>
-                <div class="fifth-row">
+                <div class="select-check-radio">
                     <div class="left-option">
-                        <input class="lrr" type="radio" id="noslice" name="pizza-slices" value="noslice">
+                        <input class="radio-check" type="radio" id="noslice" name="pizza-slices" value="noslice">
                         <label for="noslice">No slice at all?</label>
                     </div>
                     <div class="middle-option">
-                        <input class="mrr" type="radio" id="fewslices" name="pizza-slices" value="fewslices">
+                        <input class="radio-check" type="radio" id="fewslices" name="pizza-slices" value="fewslices">
                         <label for="fewslices"> 1 - 5 slice(s)</label>
                     </div>
                     <div class="right-option">
-                        <input class="rrr" type="radio" id="manyslices" name="pizza-slices" value="manyslices">
+                        <input class="radio-check" type="radio" id="manyslices" name="pizza-slices" value="manyslices">
                         <label for="manyslices"> 5+ slices</label>
-                    </div>                  
+                    </div>   
+                </div>               
+            </div>
+                <textarea class="data-textarea" name="comments" placeholder="Insert kind words here"></textarea>
+                <div class="data-signup">
+                    <input class="soo" type="checkbox" id="signup-option" name="signup-option" value="signup-option">
+                    <label for="signup-option">Sign up for special offers</label>
                 </div>
-
-                <div class="sixth-row">
-                    <div class="first-column">
-                        <textarea class="data-textarea" name="comments" placeholder="Insert kind words here"></textarea>
-                    </div>
-                </div>
-
-                <div class="seventh-row">
-                    <div class="singup-option">
-                        <input class="soo" type="checkbox" id="signup-option" name="signup-option" value="signup-option">
-                        <label for="signup-option">Sign up for special offers</label>
-                    </div>
-                    <input class="submit-button" type="submit" value="Submit">
-                </div>
+                <input class="data-submit" type="submit" value="Submit">
             </div>
         </form>
     
