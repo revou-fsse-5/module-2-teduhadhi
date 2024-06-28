@@ -326,30 +326,238 @@ Task
 ## Custom Font
 ## text-shadow and list-style
 - text-shadow
+
+Adding shadow when hovering cursor over the texts
+
+```css
+.side-items{
+    text-decoration: none;
+    margin-top: 5px;
+    transition: font-weight 0.2s, font-size 0.2s;
+    
+    &:visited{
+        color: white;
+    }
+
+    &:link{
+        color: white;
+    }
+
+    &:hover{
+        text-shadow: 4px 4px 3px black;
+    }
+}
+```
+
 <img src= "sources\readme\m2-list-2.png" alt="m2-list-2">
+
+<br>
+
 - list-style
+
+Creating dash "-" list-style by removing the bullet points then adding "-" using pseudo element.
+
+```css
+.list-style{
+    list-style: none ;
+    padding: 0;
+    padding-left: 15px;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    
+    li{
+        margin-top: 5px;
+    }
+
+    li:before{
+        content: "- ";
+    }
+}
+```
+
 <img src= "sources\readme\m2-list-1.png" alt="m2-list-1">
 
 ## Responsive Background Image
+
+Responsive background image by mirroring the background using transform.
+
+```css
+.pms-right{
+    grid-area: mnimg;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(../sources/images/main-image.svg);
+    background-size: cover;
+    background-position-x:-33px;
+    animation: 0.75s ease-in-out fade-in 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+...
+
+@media (max-width :840px){
+    .main-sect{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "mnimg"
+        "mnttl";
+    }
+    .pms-right{
+        height: 500px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: scaleX(-1);
+    }
+}
+```
+
 <img src= "sources\readme\m2-bg-1.png" alt="m2-bg-1">
 <img src= "sources\readme\m2-bg-2.png" alt="m2-bg-2">
 
 ## Responsive Image (srcset)
+
+Responsive image using srcset
+
+```css
+
+...
+
+<picture class="box-first">
+    <source media="(min-width:950px)" srcset="sources\images\grid-1.jpg">
+    <img class="boxes box-first" src="sources\images\grid-6.jpg">
+</picture> 
+
+...
+
+```
+
 <img src= "sources\readme\m2-srcset-1.png" alt="m2-srcset-1">
 <img src= "sources\readme\m2-srcset-2.png" alt="m2-srcset-2">
 
+
+
 ## Asymmetrical Grid
+
+Using basic grid-area
+
+```css
+.main-grid{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,200px);.
+}
+
+...
+
+.box-first{
+    grid-area : 1/1/3/2;
+    border-radius: 1em 1em 5em 1em;
+}
+
+...
+
+```
+
 <img src= "sources\readme\m2-grid-1.png" alt="m2-grid-1">
 <img src= "sources\readme\m2-grid-2.png" alt="m2-grid-2">
+
+
+<br>
+Using grid-template-area
+
+```css
+.data-sub-cont{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px 15px;
+    grid-template-areas:
+    "dtnme dtnme dtnme dteml dteml dteml"
+    "dtaddr dtaddr dtaddr dtaddr dtaddr dtaddr"
+    "dtcty dtcty dtpvn dtpvn dtpst dtpst"
+    "dtchk dtchk dtchk dtchk dtchk dtchk"
+    "dtrdo dtrdo dtrdo dtrdo dtrdo dtrdo"
+    "dttxt dttxt dttxt dttxt dttxt dttxt"
+    "dtsmt dtsmt dtsmt dtsmt dtsmt dtsmt";
+
+    ...
+
+    .data-name{
+    grid-area: dtnme;
+}
+.data-email{
+    grid-area: dteml;
+
+    ...
+}
+}
+```
+
+
+
 <img src= "sources\readme\m2-grid-3.png" alt="m2-grid-3">
 <img src= "sources\readme\m2-grid-4.png" alt="m2-grid-4">
 
 ## Animation
 - Animation
+
+```css
+.pms-right{
+    grid-area: mnimg;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(../sources/images/main-image.svg);
+    background-size: cover;
+    background-position-x:-33px;
+    animation: 0.75s ease-in-out fade-in 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.bored-duck-text{
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400; 
+    animation: 1.25s ease-out fly-in;
+}
+
+@keyframes fly-in{
+    from{
+        opacity: 0;
+        translate: 0 50%;
+    }
+    to{
+        opacity: 1;
+        translate: 0 0;
+    
+    }
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+```
+
 <img src= "sources\readme\m2-an.png" alt="m2-an">
+
+<br>
 
 - Transition
     - hover
+
     <img src= "sources\readme\m2-tr-h-1.png" alt="m2-tr-h-1">
     <img src= "sources\readme\m2-tr-h-2.png" alt="m2-tr-h-2">
     <img src= "sources\readme\m2-tr-h-3.png" alt="m2-tr-h-3">
@@ -360,4 +568,5 @@ Task
     <img src= "sources\readme\m2-tr-h-8.png" alt="m2-tr-h-8">
 
     - focus
+
     <img src= "sources\readme\m2-tr-f.png" alt="m2-tr-f">

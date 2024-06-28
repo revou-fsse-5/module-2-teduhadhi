@@ -22,12 +22,9 @@
         scrollbar-width: none;
         margin: 40px
     }
-    
-    
 }
 
-.boxes{
-   
+.boxes{ 
     border-radius: 15px;
     box-shadow: 2px 2px 3px rgb(211, 211, 211,0.4);
     width: 100%;
@@ -71,7 +68,6 @@
     @media(max-width:900px){
         grid-area : 3/2/5/3;
     }
-
 }
 
 .main-grid:hover .boxes{
