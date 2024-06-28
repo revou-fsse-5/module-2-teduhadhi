@@ -1,0 +1,84 @@
+.main-grid{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,200px);
+    gap:20px;
+    margin: 170px 40px 0;
+    padding: 20px;
+
+    @media(max-width:900px){
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,200px);
+        height: 400px;
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+
+    @media(max-width:840px){
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,200px);
+        height: 400px;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        margin: 40px
+    }
+    
+    
+}
+
+.boxes{
+   
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px rgb(211, 211, 211,0.4);
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    transition: opacity 0.2s ease, box-shadow 0.2s ease;
+}
+
+.box-first{
+    grid-area : 1/1/3/2;
+    border-radius: 1em 1em 5em 1em;
+}
+.box-second{
+    grid-area : 1/2/2/3;
+    border-radius: 1em 1em 1em 3em;
+}
+.box-third{
+    grid-area : 2/2/3/3;
+    border-radius: 1em 1em 3em 1em;
+}
+.box-fourth{
+    grid-area : 3/1/4/3;
+    border-radius: 1em 5em 1em 3em;
+
+    @media(max-width:900px){
+        grid-area : 3/1/4/2;
+    }
+
+}
+.box-fifth{
+    grid-area : 1/3/2/5;
+    border-radius: 1em 5em 1em 3em;
+
+    @media(max-width:900px){
+        grid-area : 4/1/5/2;
+    }
+}
+.box-sixth{
+    grid-area : 2/3/4/5;
+
+    @media(max-width:900px){
+        grid-area : 3/2/5/3;
+    }
+
+}
+
+.main-grid:hover .boxes{
+    opacity: 0.3;
+    
+}
+.main-grid:hover .boxes:hover{
+    opacity: 1;
+    box-shadow: -2px -2px 3px rgb(211, 211, 211,0.8);
+}

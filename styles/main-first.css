@@ -6,6 +6,7 @@
     align-items: center;
     grid-template-areas:
     "mnttl mnimg";
+    
 }
 
 .pms-left{
@@ -17,14 +18,18 @@
 
 .bored-duck-title{
     margin:0;
-    font-size: 70px;
+    font-size: 4.375em;
+    animation: 1.25s ease-out fly-in;
 }
+
+
 
 .bored-duck-text{
     margin: 0;
     font-size: 16px;
     line-height: 22px;
     font-weight: 400; 
+    animation: 1.25s ease-out fly-in;
 }
 
 .get-bored-button{
@@ -38,7 +43,12 @@
     font-weight: 600;
     font-size: 15px;
     transition: box-shadow 0.15s;
+    animation: 0.75s ease-in-out fade-in 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    
 }
+
 
 .get-bored-button:hover{
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
@@ -47,43 +57,85 @@
 .pms-right{
     grid-area: mnimg;
     text-align: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(../sources/images/main-image.svg);
+    background-size: cover;
+    background-position-x:-33px;
+    animation: 0.75s ease-in-out fade-in 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
-.main-image{
+/* .main-image{
     height: 350px;
+    animation: 0.75s ease-in-out fade-in 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+} */
+
+
+
+@keyframes fly-in{
+    from{
+        opacity: 0;
+        translate: 0 50%;
+    }
+    to{
+        opacity: 1;
+        translate: 0 0;
+    
+    }
 }
 
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 
 @media (max-width :840px){
     .main-sect{
         display: grid;
         grid-template-columns: 1fr;
-        gap: 20px;
         grid-template-areas:
         "mnimg"
         "mnttl";
     }
+    .pms-right{
+        height: 500px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: scaleX(-1);
+    }
 }
 
 @media (max-width :550px){
-    .main-image{
-        height: 220px; 
+    .pms-right{
+        height: 300px;
     }
+    /* .main-image{
+        height: 220px; 
+    } */
     .bored-duck-title{
         margin:0;
-        font-size: 55px;
+        font-size: 3.125em;
     }
     
     .bored-duck-text{
         margin: 0;
-        font-size: 13px;
-        line-height: 19px;
+        font-size: 0.8em;
+        line-height: 1.5em;
+    }
     }
 
     .get-bored-button{
         margin-top: 13px;
         border-radius: 22px;
         padding: 13px 20px;
-        font-size: 12px;
+        font-size: 1em;
     }
-}

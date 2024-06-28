@@ -18,57 +18,65 @@
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/main-first.css">
     <link rel="stylesheet" href="styles/main-explained.css">
+    <link rel="stylesheet" href="styles/main-grid.css">
     <link rel="stylesheet" href="styles/main-data.css">
 </head>
 <body>
-    <main>
-    <nav class="top-nav">
-        <div class="left-nav-sect">
-            <div class="container">
-                <button popovertarget="side-menu" class="menu-button"><img class="profile-icon" src="sources\icons\menu-icon.svg">
-                </button>
-                <div class="popup">More</div>
+    <header>
+            <nav class="top-nav">
+            <div class="left">
+                <div class="container">
+                    <button popovertarget="side-menu" class="menu-button"><img class="menu-icon" src="sources\icons\menu-icon.svg">
+                    </button>
+                    <div class="popup">More</div>
+                    <div class="container">
+                        <a href="#main-sect"><button class="home-button" ><img class="home-icon" src="sources\icons\home-icon.svg">
+                        </button></a>
+                        <div class="popup home-side">Home</div>
+                    </div>
+                </div>
             </div>
-        </div>
-       
-        <div class="mid-nav-sect">
-            <input class="search-bar" type="text" placeholder="Search">
-            <div class="container">
-                <img class="search-icon" src="sources\icons\search-icon.svg">
-            </div>
-        </div>
         
-        <div class="right-nav-sect">         
-            <div class="container">
-                <img class="cart-icon" src="sources\icons\cart-icon.svg">
-                <div class="popup">Cart</div>
+            <div class="mid">
+                <input class="search-bar" type="text" placeholder="Search">
+                <div class="container">
+                    <img class="search-icon" src="sources\icons\search-icon.svg">
+                </div>
             </div>
-            <div class="container">
-                <img class="heart-icon" src="sources\icons\heart-icon.svg">
-                <div class="popup">Wishlist</div>
+            
+            <div class="right">         
+                
+                <div class="container">
+                    <a href="#text-sect"><button class="info-button"><img class="info-icon" src="sources\icons\info-icon.svg">
+                    </button></a>
+                    <div class="popup">About</div>
+                </div>
+                <div class="container">               
+                    <a href="#data-sect"><button class="data-button"><img class="data-icon" src="sources\icons\globe-icon.svg">
+                    </button></a>
+                    <div class="popup">Data</div>                                         
+                </div>
+                <div class="container">               
+                    <a href="#"><button class="profile-button"><img class="profile-icon" src="sources\icons\profile-icon.svg">
+                    </button></a>
+                    <div class="popup">Sign In</div>                                         
+                </div>
             </div>
-            <div class="container">
-                <img class="envelope-icon" src="sources\icons\envelope-icon.svg">
-                <div class="popup">Inbox</div>
-            </div>
-            <div class="container">               
-                <button class="profile-button"><img class="profile-icon" src="sources\icons\profile-icon.svg">
-                </button>
-                <div class="popup">Sign In</div>                                         
-            </div>
+        </nav>
+        
+        <nav class="side-menu" popover role="side-menu" id="side-menu">
+            <button popovertarget="side-menu" popoevertargetaction="hide" class="menu-button"><img class="left-icon" src="sources\icons\left-icon.svg">
+            </button>
+            <div class="burger-list">
+            <ul class="side-list">
+                <li><a class="side-items" href="#main-sect">Home</a></li>
+                <li><a class="side-items" href="#text-sect">About</a></li>
+                <li><a class="side-items" href="#data-sect">Submission</a></li>
+            </ul>
         </div>
-    </nav>
-    
-    <nav class="side-menu" popover role="side-menu" id="side-menu">
-        <button popovertarget="side-menu" popoevertargetaction="hide" class="menu-button"><img class="left-icon" src="sources\icons\left-icon.svg">
-        </button>
-        <ul class="side-list">
-            <li><a class="side-items" href="#main-sect">Home</a></li>
-            <li><a class="side-items" href="#text-sect">About</a></li>
-            <li><a class="side-items" href="#data-sect">Submission</a></li>
-        </ul>
-    </nav>
-
+        </nav>
+    </header>
+    <main>
     <section id ="main-sect" class="main-sect">
         <div class="pms-left">
             <h1 class="bored-duck-title">BORED DUCK</h1>
@@ -78,7 +86,7 @@
             </a>
         </div>
         <div class="pms-right">
-            <img class="main-image" src="sources\images\main-image.svg">
+            <!-- <img class="main-image" src="sources\images\main-image.svg"> -->
         </div>
     </section>
     
@@ -102,6 +110,39 @@
         <div class="vsauce-boredom">
             <iframe class="vsauce-boredom-video" src="https://www.youtube.com/embed/Qwd25JV-jnU?si=73oMtepE2-BSPKla?"allow="fullscreen"></iframe>
         </div>
+    </section>
+
+    <section class="main-grid">
+        <!-- <img class="boxes box-first" src="sources\images\grid-1.jpg">
+        <img class="boxes box-second"src="sources\images\grid-2.jpg">
+        <img class="boxes box-third"src="sources\images\grid-3.jpg">
+        <img class="boxes box-fourth"src="sources\images\grid-4.jpg">
+        <img class="boxes box-fifth"src="sources\images\grid-5.jpg">
+        <img class="boxes box-sixth"src="sources\images\grid-6.jpg"> -->
+        <picture class="box-first">
+            <source media="(min-width:950px)" srcset="sources\images\grid-1.jpg">
+            <img class="boxes" src="sources\images\grid-6.jpg">
+        </picture> 
+        <picture class="box-second">
+            <source media="(min-width:950px)" srcset="sources\images\grid-2.jpg">
+            <img class="boxes" src="sources\images\grid-3.jpg">
+        </picture> 
+        <picture class="box-third">
+            <source media="(min-width:950px)" srcset="sources\images\grid-3.jpg">
+            <img class="boxes" src="sources\images\grid-2.jpg">
+        </picture> 
+        <picture class="box-fourth">
+            <source media="(min-width:950px)" srcset="sources\images\grid-4.jpg">
+            <img class="boxes" src="sources\images\grid-5.jpg">
+        </picture> 
+        <picture class="box-fifth">
+            <source media="(min-width:950px)" srcset="sources\images\grid-5.jpg">
+            <img class="boxes" src="sources\images\grid-4.jpg">
+        </picture> 
+        <picture class="box-sixth">
+            <source media="(min-width:950px)" srcset="sources\images\grid-6.jpg">
+            <img class="boxes" src="sources\images\grid-1.jpg">
+        </picture>   
     </section>
     
     <section id ="data-sect" class="data-sect">

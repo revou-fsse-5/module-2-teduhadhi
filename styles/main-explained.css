@@ -37,15 +37,16 @@
     margin-top: 10px;
     font-size: 15px;
     font-weight: 400;
+    
+    li{
+        margin-top: 5px;
+    }
+
+    li:before{
+        content: "- ";
+    }
 }
 
-.list-style li{
-    margin-top: 5px;
-}
-
-.list-style li:before{
-    content: "- ";
-}
 
 .vsauce-boredom{
     grid-area: mnexytb;
