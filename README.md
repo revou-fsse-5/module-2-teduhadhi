@@ -512,9 +512,34 @@ Using grid-template-area
 }
 ```
 
-
+Responsive grid layout
 
 <img src= "sources\readme\m2-grid-3.png" alt="m2-grid-3">
+
+```css
+@media (max-width:600px) {
+    .data-sect{
+        font-size: 0.9em;
+    }
+    .data-sub-cont{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px 15px;
+        grid-template-areas:
+        "dtnme"
+        "dteml"
+        "dtaddr"
+        "dtcty"
+        "dtpvn"
+        "dtpst"
+        "dtchk"
+        "dtrdo"
+        "dttxt"
+        "dtsmt";
+    }
+}
+```
+
 <img src= "sources\readme\m2-grid-4.png" alt="m2-grid-4">
 
 ## Animation
@@ -572,15 +597,36 @@ Using grid-template-area
 - Transition
     - hover
 
+    Pop up hover
+
     <img src= "sources\readme\m2-tr-h-1.png" alt="m2-tr-h-1">
-    <img src= "sources\readme\m2-tr-h-2.png" alt="m2-tr-h-2"><br>
+    <img src= "sources\readme\m2-tr-h-2.png" alt="m2-tr-h-2"><br><br>
+
+    Shadow hover
+
     <img src= "sources\readme\m2-tr-h-3.png" alt="m2-tr-h-3">
-    <img src= "sources\readme\m2-tr-h-4.png" alt="m2-tr-h-4"><br>
+    <img src= "sources\readme\m2-tr-h-4.png" alt="m2-tr-h-4"><br><br>
+
+    Shadow hover
+
     <img src= "sources\readme\m2-tr-h-5.png" alt="m2-tr-h-5">
-    <img src= "sources\readme\m2-tr-h-6.png" alt="m2-tr-h-6"><br>
+    <img src= "sources\readme\m2-tr-h-6.png" alt="m2-tr-h-6"><br><br>
+
+    Opacity and Shadow hover
+
     <img src= "sources\readme\m2-tr-h-7.png" alt="m2-tr-h-7">
-    <img src= "sources\readme\m2-tr-h-8.png" alt="m2-tr-h-8"><br>
+    <img src= "sources\readme\m2-tr-h-8.png" alt="m2-tr-h-8"><br><br>
 
     - focus
 
-    <img src= "sources\readme\m2-tr-f.png" alt="m2-tr-f">
+```css
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: rgb(241, 241, 241, 0.15);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+}
+```
+
+
+ <img src= "sources\readme\m2-tr-f.png" alt="m2-tr-f">
