@@ -1,6 +1,10 @@
 # 🦆 BORED DUCK
 
-[Link](https://revou-fsse-5.github.io/module-1-teduhadhi/)
+[First Module](https://revou-fsse-5.github.io/module-1-teduhadhi/)
+
+[Second Module](https://revou-fsse-5.github.io/module-2-teduhadhi/)
+
+
 # V.01
 ## General
 
@@ -307,3 +311,21 @@ Then using **translate** attribute to create a side-in animation.
 
 <img src= "sources\readme\cell-hmbrgr1.png" alt="cell-hamburger-1">
 <img src= "sources\readme\cell-hmbrgr2.png" alt="cell-hamburger-2">
+
+---
+# V.03
+
+Task
+1. Applying **custom font** using @font-face or embed
+2. Applying **text-shadow** to text and **list-style** to the list
+3. Applying 1 **responsive background image**, (using contain or cover, suit your needs)
+4. Applying 1 **responsive image** with **picture + source + srcset** method
+5. Creating one **Asymmetrical Grid** → layouting grid, both container and item (children)
+6. Creating simple **animation** with two methods: animation and transition
+
+## Custom Font
+## text-shadow and list-style
+## Responsive Background Image
+## Responsive Image (srcset)
+## Asymmetrical Grid
+## Animation
