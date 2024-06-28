@@ -15,11 +15,6 @@
     }
 
     @media(max-width:840px){
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(4,200px);
-        height: 400px;
-        overflow-y: scroll;
-        scrollbar-width: none;
         margin: 40px
     }
 }

@@ -465,10 +465,24 @@ Using basic grid-area
 ```
 
 <img src= "sources\readme\m2-grid-1.png" alt="m2-grid-1">
+
+Using overflow:scroll to minimize space's usage.
+
+```css
+    @media(max-width:900px){
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,200px);
+        height: 400px;
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+```
+
 <img src= "sources\readme\m2-grid-2.png" alt="m2-grid-2">
 
 
 <br>
+
 Using grid-template-area
 
 ```css
