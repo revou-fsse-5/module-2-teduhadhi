@@ -559,13 +559,13 @@ Using grid-template-area
     - hover
 
     <img src= "sources\readme\m2-tr-h-1.png" alt="m2-tr-h-1">
-    <img src= "sources\readme\m2-tr-h-2.png" alt="m2-tr-h-2">
+    <img src= "sources\readme\m2-tr-h-2.png" alt="m2-tr-h-2"><br>
     <img src= "sources\readme\m2-tr-h-3.png" alt="m2-tr-h-3">
-    <img src= "sources\readme\m2-tr-h-4.png" alt="m2-tr-h-4">
+    <img src= "sources\readme\m2-tr-h-4.png" alt="m2-tr-h-4"><br>
     <img src= "sources\readme\m2-tr-h-5.png" alt="m2-tr-h-5">
-    <img src= "sources\readme\m2-tr-h-6.png" alt="m2-tr-h-6">
+    <img src= "sources\readme\m2-tr-h-6.png" alt="m2-tr-h-6"><br>
     <img src= "sources\readme\m2-tr-h-7.png" alt="m2-tr-h-7">
-    <img src= "sources\readme\m2-tr-h-8.png" alt="m2-tr-h-8">
+    <img src= "sources\readme\m2-tr-h-8.png" alt="m2-tr-h-8"><br>
 
     - focus
 
