@@ -5,7 +5,7 @@
 [Second Module](https://revou-fsse-5.github.io/module-2-teduhadhi/)
 
 
-# V.01
+# V.01-01
 ## General
 
 Turns out being bored is not necessarily a bad thing??
@@ -145,7 +145,7 @@ Using &lt;footer> to define the footer's semantic tag.
 <br>
 
 ---
-# V.02
+# V.01-02
 
 ## Animation
 
@@ -313,7 +313,7 @@ Then using **translate** attribute to create a side-in animation.
 <img src= "sources\readme\cell-hmbrgr2.png" alt="cell-hamburger-2">
 
 ---
-# V.03
+# V.02-01
 
 Task
 1. Applying **custom font** using @font-face or embed
@@ -325,7 +325,39 @@ Task
 
 ## Custom Font
 ## text-shadow and list-style
+- text-shadow
+<img src= "sources\readme\m2-list-2.png" alt="m2-list-2">
+- list-style
+<img src= "sources\readme\m2-list-1.png" alt="m2-list-1">
+
 ## Responsive Background Image
+<img src= "sources\readme\m2-bg-1.png" alt="m2-bg-1">
+<img src= "sources\readme\m2-bg-2.png" alt="m2-bg-2">
+
 ## Responsive Image (srcset)
+<img src= "sources\readme\m2-srcset-1.png" alt="m2-srcset-1">
+<img src= "sources\readme\m2-srcset-2.png" alt="m2-srcset-2">
+
 ## Asymmetrical Grid
+<img src= "sources\readme\m2-grid-1.png" alt="m2-grid-1">
+<img src= "sources\readme\m2-grid-2.png" alt="m2-grid-2">
+<img src= "sources\readme\m2-grid-3.png" alt="m2-grid-3">
+<img src= "sources\readme\m2-grid-4.png" alt="m2-grid-4">
+
 ## Animation
+- Animation
+<img src= "sources\readme\m2-an.png" alt="m2-an">
+
+- Transition
+    - hover
+    <img src= "sources\readme\m2-tr-h-1.png" alt="m2-tr-h-1">
+    <img src= "sources\readme\m2-tr-h-2.png" alt="m2-tr-h-2">
+    <img src= "sources\readme\m2-tr-h-3.png" alt="m2-tr-h-3">
+    <img src= "sources\readme\m2-tr-h-4.png" alt="m2-tr-h-4">
+    <img src= "sources\readme\m2-tr-h-5.png" alt="m2-tr-h-5">
+    <img src= "sources\readme\m2-tr-h-6.png" alt="m2-tr-h-6">
+    <img src= "sources\readme\m2-tr-h-7.png" alt="m2-tr-h-7">
+    <img src= "sources\readme\m2-tr-h-8.png" alt="m2-tr-h-8">
+
+    - focus
+    <img src= "sources\readme\m2-tr-f.png" alt="m2-tr-f">
