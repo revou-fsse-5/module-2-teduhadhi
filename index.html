@@ -23,14 +23,14 @@
 </head>
 <body>
     <header>
-            <nav class="top-nav">
+            <nav id="top-nav" class="top-nav">
             <div class="left">
                 <div class="container">
-                    <button popovertarget="side-menu" class="menu-button"><img class="menu-icon" src="sources\icons\menu-icon.svg">
+                    <button popovertarget="side-menu" class="nav-button menu-button"><img class="menu-icon" src="sources\icons\menu-icon.svg" alt="menu icon">
                     </button>
                     <div class="popup">More</div>
                     <div class="container">
-                        <a href="#main-sect"><button class="home-button" ><img class="home-icon" src="sources\icons\home-icon.svg">
+                        <a href="#main-sect"><button class="nav-button home-button" ><img class="home-icon" src="sources\icons\home-icon.svg" alt="home icon">
                         </button></a>
                         <div class="popup home-side">Home</div>
                     </div>
@@ -40,32 +40,33 @@
             <div class="mid">
                 <input class="search-bar" type="text" placeholder="Search">
                 <div class="container">
-                    <img class="search-icon" src="sources\icons\search-icon.svg">
+                    <img class="search-icon" src="sources\icons\search-icon.svg" alt="search icon">
                 </div>
             </div>
             
             <div class="right">         
                 
                 <div class="container">
-                    <a href="#text-sect"><button class="info-button"><img class="info-icon" src="sources\icons\info-icon.svg">
+                    <a href="#text-sect"><button class="nav-button info-button"><img class="info-icon" src="sources\icons\info-icon.svg" alt="info icon">
                     </button></a>
                     <div class="popup">About</div>
                 </div>
                 <div class="container">               
-                    <a href="#data-sect"><button class="data-button"><img class="data-icon" src="sources\icons\globe-icon.svg">
+                    <a href="#data-sect"><button class="nav-button data-button"><img class="data-icon" src="sources\icons\globe-icon.svg" alt="data submission icon">
                     </button></a>
                     <div class="popup">Data</div>                                         
                 </div>
                 <div class="container">               
-                    <a href="#"><button class="profile-button"><img class="profile-icon" src="sources\icons\profile-icon.svg">
+                    <a href="#"><button class="nav-button profile-button"><img class="profile-icon" src="sources\icons\profile-icon.svg" alt="profile icon">
                     </button></a>
                     <div class="popup">Sign In</div>                                         
                 </div>
             </div>
+            <button onclick="darkMode()"  class="button-test">dark-mode</button>
         </nav>
         
         <nav class="side-menu" popover role="side-menu" id="side-menu">
-            <button popovertarget="side-menu" popoevertargetaction="hide" class="menu-button"><img class="left-icon" src="sources\icons\left-icon.svg">
+            <button popovertarget="side-menu" popoevertargetaction="hide" class="nav-button menu-button"><img class="left-icon" src="sources\icons\left-icon.svg" alt="hide icon">
             </button>
             <div class="burger-list">
             <ul class="side-list">
@@ -82,8 +83,11 @@
             <h1 class="bored-duck-title">BORED DUCK</h1>
             <p class="bored-duck-text">In a serene pond, there lived a duck named Quackington, who was constantly plagued by boredom. Each day felt like a monotonous repetition of paddling lazily across the water and nibbling on aquatic greens. He longed for excitement to break the mundane routine, gazing wistfully at the sky for adventure to descend upon his feathered world.</p>
             <a href="https://www.google.com/search?q=pizza&sca_esv=eae7a402c78866a8&sca_upv=1&udm=2&sxsrf=ADLYWIIDq30tfIXDuhL-qONOaqe2Tly-Nw%3A1718271965922&ei=3b9qZpzvN5ad4-EPtNexoAs&ved=0ahUKEwjc0Z_xpdiGAxWWzjgGHbRrDLQQ4dUDCBA&uact=5&oq=pizza&gs_lp=Egxnd3Mtd2l6LXNlcnAiBXBpenphMg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFMggQABiABBixAzIFEAAYgAQyCBAAGIAEGLEDMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIsR1QhwpY8RtwBngAkAEAmAFboAHSBaoBATm4AQPIAQD4AQGYAg-gArsGwgIEECMYJ8ICBBAAGAPCAg4QABiABBixAxiDARiKBZgDAIgGAZIHBDEzLjKgB_wv&sclient=gws-wiz-serp" target="_blank">
-            <button class="get-bored-button">GET BORED</button>
+                <button class="get-bored-button">GET BORED</button>
             </a>
+            
+            
+
         </div>
         <div class="pms-right">
             <!-- <img class="main-image" src="sources\images\main-image.svg"> -->
@@ -94,7 +98,7 @@
     <section id ="text-sect" class="text-sect">   
         <div class="why-bored-explained">
             <div class="why-bored-image">
-                <img class="bored-image" src="sources\images\why-bored.svg">
+                <img class="bored-image" src="sources\images\why-bored.svg" alt="dude sleeping image">
             </div>
             <div class="why-bored-text">
             <h2 class="ssh-left-why-bored">Boredom is good, here's why</h2>
@@ -108,7 +112,7 @@
             </div>
         </div>
         <div class="vsauce-boredom">
-            <iframe class="vsauce-boredom-video" src="https://www.youtube.com/embed/Qwd25JV-jnU?si=73oMtepE2-BSPKla?"allow="fullscreen"></iframe>
+            <iframe id="youtube" class="vsauce-boredom-video" src="https://www.youtube.com/embed/Qwd25JV-jnU?si=73oMtepE2-BSPKla?"allow="fullscreen" title="vsauce boredom youtube video"></iframe>
         </div>
     </section>
 
@@ -120,28 +124,28 @@
         <img class="boxes box-fifth"src="sources\images\grid-5.jpg">
         <img class="boxes box-sixth"src="sources\images\grid-6.jpg"> -->
         <picture class="box-first">
-            <source media="(min-width:950px)" srcset="sources\images\grid-1.jpg">
-            <img class="boxes box-first" src="sources\images\grid-6.jpg">
+            <source media="(min-width:950px)" srcset="sources\images\grid-1.jpg" alt="dude reading book while doing a headstand">
+            <img class="boxes box-first" src="sources\images\grid-6.jpg" alt="duck reading book while leaning on a pillow">
         </picture> 
         <picture class="box-second">
-            <source media="(min-width:950px)" srcset="sources\images\grid-2.jpg">
-            <img class="boxes box-second" src="sources\images\grid-3.jpg">
+            <source media="(min-width:950px)" srcset="sources\images\grid-2.jpg" alt="duck enjoying a cup of tea">
+            <img class="boxes box-second" src="sources\images\grid-3.jpg" alt="dude laying upside down on a sofa">
         </picture> 
         <picture class="box-third">
-            <source media="(min-width:950px)" srcset="sources\images\grid-3.jpg">
-            <img class="boxes box-third" src="sources\images\grid-2.jpg">
+            <source media="(min-width:950px)" srcset="sources\images\grid-3.jpg" alt="dude laying upside down on a sofa">
+            <img class="boxes box-third" src="sources\images\grid-2.jpg" alt="duck enjoying a cup of tea">
         </picture> 
         <picture class="box-fourth">
-            <source media="(min-width:950px)" srcset="sources\images\grid-4.jpg">
-            <img class="boxes box-fourth" src="sources\images\grid-5.jpg">
+            <source media="(min-width:950px)" srcset="sources\images\grid-4.jpg" alt="duck sleeping with a blanket on">
+            <img class="boxes box-fourth" src="sources\images\grid-5.jpg" alt="duck chilling while enjoying an ice cream ">
         </picture> 
         <picture class="box-fifth">
-            <source media="(min-width:950px)" srcset="sources\images\grid-5.jpg">
-            <img class="boxes box-fifth" src="sources\images\grid-4.jpg">
+            <source media="(min-width:950px)" srcset="sources\images\grid-5.jpg" alt="duck chilling while enjoying an ice cream ">
+            <img class="boxes box-fifth" src="sources\images\grid-4.jpg" alt="duck sleeping with a blanket on">
         </picture> 
         <picture class="box-sixth">
-            <source media="(min-width:950px)" srcset="sources\images\grid-6.jpg">
-            <img class="boxes box-sixth" src="sources\images\grid-1.jpg">
+            <source media="(min-width:950px)" srcset="sources\images\grid-6.jpg" alt="duck reading book while leaning on a pillow">
+            <img class="boxes box-sixth" src="sources\images\grid-1.jpg" alt="dude reading book while doing a headstand">
         </picture>   
     </section>
     
@@ -211,5 +215,35 @@
     <footer class="footer">
         <a href ="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><button class="footer-button">&#169 Bored Duck x Ted</button></a>
     </footer>
+
+    
+    
+    <script>
+            var element = document.body;
+            var element2 = document.getElementById("youtube");
+
+
+            element.classList.toggle(localStorage.dark);          
+            element2.classList.toggle(localStorage.dark);
+
+
+        function darkMode() {
+            
+           if (localStorage.dark !="dark-mode"){
+            element.classList.toggle("dark-mode",true);          
+            element2.classList.toggle("dark-mode",true);
+            localStorage.dark="dark-mode"
+           }
+
+           else{
+            element.classList.toggle("dark-mode",false);          
+            element2.classList.toggle("dark-mode",false);
+            localStorage.dark=""
+           }  
+        };
+        </script>    
+
+
 </body>
 </html>
+

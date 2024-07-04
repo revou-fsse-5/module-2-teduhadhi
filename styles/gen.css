@@ -24,6 +24,13 @@ footer{
     font-size: 15px; 
 }
 
+
+.dark-mode{
+    filter: invert(100%);
+    background-color: black;
+}
+
+
 @media(max-width:780px){
     body{
         padding-top:80px;
