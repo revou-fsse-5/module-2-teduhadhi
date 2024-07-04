@@ -1,8 +1,14 @@
 # 🦆 BORED DUCK
 
-[First Module](https://revou-fsse-5.github.io/module-1-teduhadhi/)
+[boredduck custom domain](https://www.boredduck.site/)
 
 [Second Module](https://revou-fsse-5.github.io/module-2-teduhadhi/)
+
+[First Module](https://revou-fsse-5.github.io/module-1-teduhadhi/)
+
+
+
+
 
 
 
@@ -66,6 +72,73 @@ function darkMode() {
 <img src= "sources\readme\m2-dark-2.png" alt="dark mode 2">
 
 *Issue : the nav bar behaviour changes when the page is on dark-mode (the position no longger fixed and the width changes to the body's width)
+
+## Deployment with Vercel
+
+1. Log in vercel with github account.
+2. Click Add New Project.
+
+<img src= "sources\readme\m2-vercel-1.png" alt="vercel 1">
+
+3. Select and import the Git Repository.
+
+<img src= "sources\readme\m2-vercel-2.png" alt="vercel 2">
+
+4. Set the project name then deploy.
+
+<img src= "sources\readme\m2-vercel-3.png" alt="vercel 3">
+
+5. The project has been deployed with Vercel.
+
+<img src= "sources\readme\m2-vercel-4.png" alt="vercel 4"> <br>
+<img src= "sources\readme\m2-vercel-5.png" alt="vercel 5">
+
+
+## Custom Domain with Niagahoster
+
+1. Search the available custom domain on niagahoster.
+
+<img src= "sources\readme\m2-niaga-1.png" alt="niaga 1">
+
+2. Select the available custom domain.
+
+<img src= "sources\readme\m2-niaga-2.png" alt="niaga 2">
+
+3. Fill in the form, then make the payment
+
+<img src= "sources\readme\m2-niaga-3.png" alt="niaga 3">
+
+4. Edit the Nameserver
+
+<img src= "sources\readme\m2-niaga-4.png" alt="niaga 4"><br>
+<img src= "sources\readme\m2-niaga-5.png" alt="niaga 5">
+
+5. Select Add Domain.
+
+<img src= "sources\readme\m2-vercel-6.png" alt="vercel 6">
+
+6. Insert the custom domain then click add.
+
+<img src= "sources\readme\m2-vercel-7.png" alt="vercel 7">
+
+7. CLick nameservers then click enable vercel DNS.
+
+<img src= "sources\readme\m2-vercel-8.png" alt="vercel 8">
+
+8. Copy the nameservers.
+
+<img src= "sources\readme\m2-vercel-9.png" alt="vercel 9">
+
+9. Paste the nameservers.
+
+<img src= "sources\readme\m2-niaga-6.png" alt="niaga 6">
+
+10. The domain has been linked.
+
+<img src= "sources\readme\m2-vercel-10.png" alt="vercel 10">
+<img src= "sources\readme\m2-deployed.png" alt="deployed web">
+
+
 ---
 
 <br>
